@@ -51,12 +51,13 @@
     position: relative;
     left: initial;
     right: initial;
+    background: #ffffff50;
   }
 
   .button {
     width: auto;
     left: auto;
-    background: none;
+    background: #ffffff50;
   }
 
   .input:focus + .button {
