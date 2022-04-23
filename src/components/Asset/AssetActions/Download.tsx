@@ -247,6 +247,7 @@ export default function Download({
     />
   )
 
+  // Note: this should work now? I think? fucking hell
   return (
     <aside className={styles.consume}>
       <div className={styles.info}>
