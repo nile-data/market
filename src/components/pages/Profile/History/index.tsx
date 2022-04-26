@@ -22,20 +22,12 @@ function getTabs(accountId: string, userAccountId: string): HistoryTab[] {
       content: <PublishedList accountId={accountId} />
     },
     {
-      title: 'Pool Shares',
-      content: <PoolShares accountId={accountId} />
-    },
-    {
-      title: 'Pool Transactions',
-      content: <PoolTransactions accountId={accountId} />
-    },
-    {
       title: 'Downloads',
       content: <Downloads accountId={accountId} />
     }
   ]
   const computeTab: HistoryTab = {
-    title: 'Compute Jobs',
+    title: 'Prepocessed ML Model',
     content: (
       <OceanProvider>
         <ComputeJobs />

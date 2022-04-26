@@ -15,13 +15,10 @@ const clearFilters = [{ display: 'Clear', value: '' }]
 
 const serviceFilterItems = [
   { display: 'data sets', value: FilterByTypeOptions.Data },
-  { display: 'algorithms', value: FilterByTypeOptions.Algorithm }
+  { display: 'ML Models', value: FilterByTypeOptions.Algorithm }
 ]
 
-const accessFilterItems = [
-  { display: 'download ', value: FilterByAccessOptions.Download },
-  { display: 'compute ', value: FilterByAccessOptions.Compute }
-]
+const accessFilterItems = []
 
 export default function FilterPrice({
   serviceType,

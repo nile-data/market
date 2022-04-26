@@ -4,14 +4,14 @@
     {
       "name": "name",
       "label": "Title",
-      "placeholder": "e.g. Shapes of Desert Plants",
-      "help": "Enter a concise title.",
+      "placeholder": "e.g. car location data for self-driving ML",
+      "help": "Enter a title.",
       "required": true
     },
     {
       "name": "description",
       "label": "Description",
-      "help": "Add a thorough description with as much detail as possible. You can use [Markdown](https://daringfireball.net/projects/markdown/basics). You can change the description at any time. If you provide personal data, please note that it will remain in the transaction history. For more information on how personal data is handled within the metadata, please refer to our [privacy policy](/privacy/en).",
+      "help": "Add a thorough description and provide as much detail as possible.",
       "type": "textarea",
       "required": true
     },
@@ -19,7 +19,7 @@
       "name": "files",
       "label": "File",
       "placeholder": "e.g. https://file.com/file.json",
-      "help": "Please enter the URL to your data set file and click \"ADD FILE\" to validate the data. This URL will be stored encrypted after publishing. For a compute data set, your file should match the file type required by the algorithm, and should not exceed 1 GB in file size.",
+      "help": "Please enter the URL to your data set file and click \"ADD FILE\" to validate the data.",
       "type": "files",
       "required": true
     },
@@ -27,17 +27,17 @@
       "name": "links",
       "label": "Sample file",
       "placeholder": "e.g. https://file.com/samplefile.json",
-      "help": "Please enter the URL to a sample of your data set file and click \"ADD FILE\" to validate the data. This file should reveal the data structure of your data set, e.g. by including the header and one line of a CSV file. This file URL will be publicly available after publishing.",
+      "help": "Please enter the URL to a sample of your data set file and click \"ADD FILE\" to validate the data.",
       "type": "files"
     },
     {
       "name": "access",
       "label": "Access Type",
-      "help": "Choose how you want your files to be accessible for the specified price.",
+      "help": "Choose how you want your files to be accessible",
       "type": "boxSelection",
       "options": ["Download", "Compute"],
       "required": true,
-      "disclaimer": "Please do not provide downloadable personal data without the consent of the data subjects.",
+      "disclaimer": "Do not provide downloadable personal data without the consent.",
       "disclaimerValues": ["Download"]
     },
     {
@@ -67,8 +67,8 @@
     {
       "name": "author",
       "label": "Author",
-      "placeholder": "e.g. Jelly McJellyfish",
-      "help": "Give proper attribution for your data set. You are welcome to use a pseudonym, and you can change your author name at any time. Please note that it will remain in the transaction history. For more information on how personal data is handled within the metadata, please refer to our [privacy policy](/privacy/en).",
+      "placeholder": "e.g. Josh Abdulla",
+      "help": "",
       "required": true
     },
     {
