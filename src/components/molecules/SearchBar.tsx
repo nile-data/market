@@ -76,7 +76,7 @@ export default function SearchBar({
       <InputElement
         type="search"
         name="search"
-        placeholder={placeholder || 'Search...'}
+        placeholder={placeholder || 'Search Datasets...'}
         value={value}
         onChange={handleChange}
         required

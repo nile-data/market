@@ -1,9 +1,9 @@
 :root {
   --brand-white: #ffffff;
   --brand-black: #141414;
-  --brand-pink: #ff4092;
-  --brand-purple: #7b1173;
-  --brand-violet: #e000cf;
+  --brand-pink: #0046ae;
+  --brand-purple: #0066ff;
+  --brand-violet: #0066ff;
 
   --brand-grey-darker: #201f1f;
   --brand-grey-dark: #303030;
@@ -12,19 +12,19 @@
   --brand-grey-lighter: #e2e2e2;
   --brand-grey-dimmed: #f7f7f7;
 
-  --brand-gradient: linear-gradient(to right bottom, #7b1173, #ff4092);
+  --brand-gradient: linear-gradient(to right bottom, #001eff, #0066ff);
 
   --brand-alert-green: #5fb359;
   --brand-alert-red: #d80606;
-  --brand-alert-orange: #b35f36;
-  --brand-alert-yellow: #eac146;
+  --brand-alert-orange: #ff5702;
+  --brand-alert-yellow: #fff700;
 
-  --color-primary: #ff4092;
-  --color-secondary: #8b98a9;
+  --color-primary: #0066ff;
+  --color-secondary: #ffffff;
 
   /* Only use these vars for most color referencing for easy light/dark mode */
-  --font-color-text: #41474e;
-  --font-color-heading: #141414;
+  --font-color-text: #ffffff;
+  --font-color-heading: #0066ff;
   --background-body: #fcfcfc;
   --background-content: #fff;
   --background-body-transparent: rgba(255, 255, 255, 0.8);
@@ -33,11 +33,11 @@
   --border-color: #e2e2e2;
   --box-shadow-color: rgba(0, 0, 0, 0.05);
 
-  --font-family-base: 'Sharp Sans', -apple-system, BlinkMacSystemFont,
+  --font-family-base: 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Arial Display', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Helvetica, Arial, sans-serif;
-  --font-family-heading: 'Sharp Sans Display', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Helvetica, Arial, sans-serif;
-  --font-family-monospace: 'Fira Code', 'Fira Mono', Menlo, Monaco, Consolas,
+  --font-family-monospace: 'Arial', 'Arial', Menlo, Monaco, Consolas,
     'Courier New', monospace;
 
   --font-size-root: 15px;
