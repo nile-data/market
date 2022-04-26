@@ -189,15 +189,7 @@ export default function HomePage(): ReactElement {
         )}
           */}
         {queryLatest && (
-          <SectionQueryResult
-            title="Recently Published"
-            query={queryLatest}
-            action={
-              <Button style="text" to="/search?sort=created&sortOrder=desc">
-                All data sets and algorithms →
-              </Button>
-            }
-          />
+          <SectionQueryResult title="Recently Published" query={queryLatest} />
         )}
         {/*<PublishersWithMostSales title="Publishers with most sales" />*/}
       </>

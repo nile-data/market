@@ -53,7 +53,6 @@ export default function Networks(): ReactElement {
             <Label htmlFor="chains">Networks</Label>
             <FormHelp>Switch the data source for the interface.</FormHelp>
 
-            <NetworksList title="Main" networks={networksMain} />
             <NetworksList title="Test" networks={networksTest} />
           </li>
         </ul>
