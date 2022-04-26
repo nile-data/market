@@ -169,11 +169,7 @@ export default function Download({
       </div>
 
       {asset?.accessDetails?.datatoken?.name !== '' &&
-        asset?.nft.owner === accountId && (
-          <div className={styles.collect}>
-            <CollectTokensButton />
-          </div>
-        )}
+        asset?.nft.owner === accountId && <div className={styles.collect} />}
 
       {asset?.metadata?.type === 'algorithm' && (
         <AlgorithmDatasetsListForCompute

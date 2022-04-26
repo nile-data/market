@@ -199,22 +199,9 @@ export async function createTokensAndPricing(
   const nftCreateData: NftCreateData = generateNftCreateData(
     values.metadata.nft
   )
+
   const { appConfig } = getSiteMetadata()
   LoggerInstance.log('[publish] Creating NFT with metadata', nftCreateData)
-
-  // TODO: cap is hardcoded for now to 1000, this needs to be discussed at some point
-  const ercParams: Erc20CreateParams = {
-    templateIndex: values.pricing.type === 'dynamic' ? 1 : 2,
-    minter: accountId,
-    feeManager: accountId,
-    mpFeeAddress: appConfig.marketFeeAddress,
-    feeToken: config.oceanTokenAddress,
-    feeAmount: appConfig.publisherMarketOrderFee,
-    // max number
-    cap: '115792089237316195423570985008687907853269984665640564039457',
-    name: values.services[0].dataTokenOptions.name,
-    symbol: values.services[0].dataTokenOptions.symbol
-  }
 
   LoggerInstance.log('[publish] Creating datatoken with ercParams', ercParams)
 
