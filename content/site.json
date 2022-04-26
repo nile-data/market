@@ -3,7 +3,7 @@
     "siteTitle": "NILE",
     "siteTagline": "EMPOWER INNOVATION.",
     "siteUrl": "https://market.oceanprotocol.com",
-    "siteIcon": "node_modules/@oceanprotocol/art/logo/favicon-white.png",
+    "siteIcon": "src/images/favicon-32x32.png",
     "siteImage": "../src/images/share.png",
     "copyright": "All Rights Reserved.",
     "menu": [
