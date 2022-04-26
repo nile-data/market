@@ -35,6 +35,9 @@ import MetadataFeedback from '../../molecules/MetadataFeedback'
 import { useAccountPurgatory } from '../../../hooks/useAccountPurgatory'
 import { useWeb3 } from '../../../providers/Web3'
 
+// S3
+import Upload from './S3/UploadForm'
+
 const formNameDatasets = 'ocean-publish-form-datasets'
 const formNameAlgorithms = 'ocean-publish-form-algorithms'
 
@@ -219,6 +222,7 @@ export default function PublishPage({
 
   return isInPurgatory && purgatoryData ? null : (
     <Permission eventType="publish">
+      <Upload />
       <Formik
         initialValues={
           publishType === 'dataset' ? datasetInitialValues : algoInitialValues
