@@ -242,10 +242,6 @@ export default function PublishPage({
             {
               title: 'Data Set',
               content: <TabContent values={values} publishType={publishType} />
-            },
-            {
-              title: 'ML Model',
-              content: <TabContent values={values} publishType={publishType} />
             }
           ]
 
