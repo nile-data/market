@@ -72,7 +72,7 @@ export default function FormAdd({
     async function calculatePoolShares() {
       if (!ocean) return
       const tokenInAddress =
-        coin === 'OCEAN' ? ocean.pool.oceanAddress : ocean.pool.dtAddress
+        coin === 'NILE' ? ocean.pool.oceanAddress : ocean.pool.dtAddress
       if (!values.amount || !tokenInAddress) {
         setNewPoolTokens('0')
         setNewPoolShare('0')
@@ -121,7 +121,7 @@ export default function FormAdd({
   return (
     <>
       <UserLiquidity
-        amount={coin === 'OCEAN' ? balance.ocean : dtBalance}
+        amount={coin === 'NILE' ? balance.ocean : dtBalance}
         amountMax={amountMax}
         symbol={coin}
       />

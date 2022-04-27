@@ -71,7 +71,7 @@ export default function Add({
   const { isAssetNetwork } = useAsset()
   const { debug } = useUserPreferences()
   const [txId, setTxId] = useState<string>()
-  const [coin, setCoin] = useState('OCEAN')
+  const [coin, setCoin] = useState('NILE')
   const [dtBalance, setDtBalance] = useState<string>()
   const [amountMax, setAmountMax] = useState<string>()
   const [amount, setAmount] = useState<string>('0')
@@ -93,7 +93,7 @@ export default function Add({
 
   // Get datatoken balance when datatoken selected
   useEffect(() => {
-    if (!ocean || !isAssetNetwork || coin === 'OCEAN') return
+    if (!ocean || !isAssetNetwork || coin === 'NILE') return
 
     async function getDtBalance() {
       const dtBalance = await ocean.datatokens.balance(dtAddress, accountId)
@@ -102,18 +102,18 @@ export default function Add({
     getDtBalance()
   }, [ocean, accountId, dtAddress, coin])
 
-  // Get maximum amount for either OCEAN or datatoken
+  // Get maximum amount for either NILE or datatoken
   useEffect(() => {
     if (!ocean || !isAssetNetwork || !poolAddress) return
 
     async function getMaximum() {
       const amountMaxPool =
-        coin === 'OCEAN'
+        coin === 'NILE'
           ? await ocean.pool.getOceanMaxAddLiquidity(poolAddress)
           : await ocean.pool.getDTMaxAddLiquidity(poolAddress)
 
       const amountMax =
-        coin === 'OCEAN'
+        coin === 'NILE'
           ? Number(balance.ocean) > Number(amountMaxPool)
             ? amountMaxPool
             : balance.ocean
@@ -129,7 +129,7 @@ export default function Add({
   async function handleAddLiquidity(amount: number, resetForm: () => void) {
     try {
       const result =
-        coin === 'OCEAN'
+        coin === 'NILE'
           ? await ocean.pool.addOceanLiquidity(
               accountId,
               poolAddress,

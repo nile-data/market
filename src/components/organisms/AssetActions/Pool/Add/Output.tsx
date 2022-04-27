@@ -63,11 +63,11 @@ export default function Output({
     const newPoolSupply = new Decimal(totalPoolTokens).plus(newPoolTokens)
     const ratio = new Decimal(newPoolTokens).div(newPoolSupply)
     const newOceanReserve =
-      coin === 'OCEAN'
+      coin === 'NILE'
         ? new Decimal(totalBalance.ocean).plus(values.amount)
         : new Decimal(totalBalance.ocean)
     const newDtReserve =
-      coin === 'OCEAN'
+      coin === 'NILE'
         ? new Decimal(totalBalance.datatoken)
         : new Decimal(totalBalance.datatoken).plus(values.amount)
     const poolOcean = newOceanReserve.mul(ratio).toString()
@@ -96,7 +96,7 @@ export default function Output({
         </div>
         <div>
           <p>{titleOut}</p>
-          <Token symbol="OCEAN" balance={poolOcean} />
+          <Token symbol="NILE" balance={poolOcean} />
           <Token symbol={dtSymbol} balance={poolDatatoken} />
         </div>
       </div>

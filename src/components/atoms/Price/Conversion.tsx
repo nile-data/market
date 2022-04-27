@@ -13,7 +13,7 @@ export default function Conversion({
   hideApproximateSymbol,
   showTVLLabel
 }: {
-  price: string // expects price in OCEAN, not wei
+  price: string // expects price in NILE, not wei
   className?: string
   hideApproximateSymbol?: boolean
   showTVLLabel?: boolean
@@ -62,7 +62,7 @@ export default function Conversion({
   return (
     <span
       className={styleClasses}
-      title="Approximation based on current OCEAN spot price on Coingecko"
+      title="Approximation based on current NILE spot price on Coingecko"
     >
       {showTVLLabel && 'TVL'}
       {!hideApproximateSymbol && '≈ '}

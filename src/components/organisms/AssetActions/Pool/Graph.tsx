@@ -74,7 +74,7 @@ function getOptions(locale: string, isDarkMode: boolean): ChartOptions {
       borderColor: isDarkMode ? `#41474e` : `#e2e2e2`,
       callbacks: {
         label: (tooltipItem: ChartTooltipItem) =>
-          `${formatPrice(`${tooltipItem.yLabel}`, locale)} OCEAN`
+          `${formatPrice(`${tooltipItem.yLabel}`, locale)} NILE`
       }
     },
     legend: {
@@ -227,7 +227,7 @@ export default function Graph(): ReactElement {
           datasets: [
             {
               ...lineStyle,
-              label: 'Liquidity (OCEAN)',
+              label: 'Liquidity (NILE)',
               data:
                 graphType === 'liquidity'
                   ? latestLiquidtyHistory.slice(0)

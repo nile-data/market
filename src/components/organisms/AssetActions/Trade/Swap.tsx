@@ -132,7 +132,7 @@ export default function Swap({
 
   const switchTokens = () => {
     setFieldValue('type', values.type === 'buy' ? 'sell' : 'buy')
-    setCoin(values.type === 'sell' ? 'OCEAN' : ddo.dataTokenInfo.symbol)
+    setCoin(values.type === 'sell' ? 'NILE' : ddo.dataTokenInfo.symbol)
     // don't reset form because we don't want to reset type
     setFieldValue('datatoken', 0)
     setFieldValue('ocean', 0)

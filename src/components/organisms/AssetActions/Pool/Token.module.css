@@ -27,7 +27,7 @@
 }
 
 /* Data Token Icon Style */
-.icon:not([class*='OCEAN']) path {
+.icon:not([class*='NILE']) path {
   fill: var(--brand-violet);
 }
 

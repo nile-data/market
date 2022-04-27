@@ -19,7 +19,7 @@ export default function Trade(): ReactElement {
   const [maxDt, setMaxDt] = useState('0')
   const [maxOcean, setMaxOcean] = useState('0')
 
-  // Get datatoken balance, and combine with OCEAN balance from hooks into one object
+  // Get datatoken balance, and combine with NILE balance from hooks into one object
   useEffect(() => {
     if (
       !ocean ||
@@ -40,7 +40,7 @@ export default function Trade(): ReactElement {
     getTokenBalance()
   }, [balance.ocean, ocean, accountId, ddo.dataToken])
 
-  // Get maximum amount for either OCEAN or datatoken
+  // Get maximum amount for either NILE or datatoken
   useEffect(() => {
     if (!ocean || !isAssetNetwork || !price || price.value === 0) return
 

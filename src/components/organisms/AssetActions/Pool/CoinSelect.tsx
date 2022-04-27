@@ -16,8 +16,8 @@ export default function CoinSelect({
       onChange={(e) => setCoin(e.target.value)}
       disabled={disabled}
     >
-      <option className={styles.option} value="OCEAN">
-        OCEAN
+      <option className={styles.option} value="NILE">
+        NILE
       </option>
       <option className={styles.option} value={dtSymbol}>
         {dtSymbol}

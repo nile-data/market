@@ -54,7 +54,7 @@ export default function FormTrade({
   const { isAssetNetwork } = useAsset()
   const { debug } = useUserPreferences()
   const [txId, setTxId] = useState<string>()
-  const [coinFrom, setCoinFrom] = useState<string>('OCEAN')
+  const [coinFrom, setCoinFrom] = useState<string>('NILE')
 
   const [maximumOcean, setMaximumOcean] = useState(maxOcean)
   const [maximumDt, setMaximumDt] = useState(maxDt)

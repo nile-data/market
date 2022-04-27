@@ -35,7 +35,7 @@ export const initialValues: PriceOptionsMarket = {
       : 'free',
   dtAmount: allowDynamicPricing === 'true' ? 9 : 1000,
   oceanAmount: 21,
-  weightOnOcean: '7', // 70% on OCEAN
+  weightOnOcean: '7', // 70% on NILE
   weightOnDataToken: '3', // 30% on datatoken
   swapFee: 0.1 // in %
 }
